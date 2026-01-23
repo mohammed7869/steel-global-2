@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>About Us | Steel Global Services</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A4238",
+            "brand-burgundy": "#800020",
+            "brand-silver": "#C0C0C0",
+            "brand-orange": "#F37021",
+            "brand-green": "#4B8B3B",
+            "brand-brown": "#4A4238",
+            "background-light": "#f8f8f8",
+            "background-dark": "#13131f",
+            "steel-grey": "#525252",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          keyframes: {
+            'ripple': {
+              '0%': { transform: 'scale(0.8)', opacity: '1' },
+              '100%': { transform: 'scale(2.4)', opacity: '0' },
+            },
+            'slide-up-fade': {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            'pop-bounce': {
+              '0%': { transform: 'scale(0)', opacity: '0' },
+              '70%': { transform: 'scale(1.2)' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            'line-grow': {
+              '0%': { width: '0%' },
+              '100%': { width: '100%' }
+            }
+          },
+          animation: {
+            'ripple': 'ripple 2s infinite',
+            'slide-up-fade': 'slide-up-fade 0.8s ease-out forwards',
+            'pop-bounce': 'pop-bounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+            'line-grow': 'line-grow 2s linear forwards'
+          }
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    :root {
+            --brand-burgundy: #800020;
+            --brand-silver: #C0C0C0;
+            --brand-orange: #F37021;
+            --brand-green: #4B8B3B;
+            --brand-brown: #4A4238;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .scroll-hide::-webkit-scrollbar { display: none; }
+        .timeline-line-animate {
+            view-timeline-name: --timeline;
+            view-timeline-axis: block;
+        }
+        .timeline-progress {
+            animation: line-grow linear both;
+            animation-timeline: --timeline;
+            animation-range: entry 10% exit 90%;
+        }
+        .reveal-on-scroll {
+            view-timeline-name: --revealer;
+            view-timeline-axis: block;
+            animation: slide-up-fade linear both;
+            animation-timeline: --revealer;
+            animation-range: entry 10% cover 30%;
+        }
+        .bounce-on-scroll {
+            view-timeline-name: --bouncer;
+            view-timeline-axis: block;
+            animation: pop-bounce linear both;
+            animation-timeline: --bouncer;
+            animation-range: entry 20% cover 40%;
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.3s; }
+        .stagger-3 { animation-delay: 0.5s; }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#101019] dark:text-white transition-colors duration-300">
+  <div class="layout-container flex h-full grow flex-col">
+    <header
+      class="flex items-center justify-between border-b border-solid border-[#e9e9f1] dark:border-white/10 px-6 md:px-20 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
+      <div class="flex items-center gap-8">
+        <div class="flex items-center gap-3 text-brand-brown dark:text-white">
+          <div class="size-10">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"></circle>
+              <path d="M15 24C15 19.0294 19.0294 15 24 15C28.9706 15 33 19.0294 33 24" stroke="var(--brand-orange)"
+                stroke-linecap="round" stroke-width="3"></path>
+              <path d="M33 24C33 28.9706 28.9706 33 24 33C19.0294 33 15 28.9706 15 24" stroke="var(--brand-burgundy)"
+                stroke-linecap="round" stroke-width="3"></path>
+              <circle cx="24" cy="24" fill="var(--brand-green)" r="4"></circle>
+            </svg>
+          </div>
+          <h2 class="text-xl font-extrabold tracking-tighter uppercase">Steel Global Services</h2>
+        </div>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a class="text-sm font-bold hover:text-brand-orange transition-colors" href="../index.html">Home</a>
+          <a class="text-sm font-bold hover:text-brand-orange transition-colors"
+            href="../pipe_&_fittings_catalog/code.html">Products</a>
+          <a class="text-sm font-bold text-brand-orange" href="#">About Us</a>
+          <a class="text-sm font-bold hover:text-brand-orange transition-colors"
+            href="../engineering_contact_us_page/code.html">Contact Us</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="../sgs_request_a_quote_page/code.html"
+          class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-brand-brown text-white text-sm font-bold tracking-wide transition-all active:scale-95 hover:bg-black hover:shadow-lg">
+          Get a Quote
+        </a>
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-brand-orange/20"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrn32g_AoUnKudME4eWpVq37NSg4WWQw0mrAooL1CXGybN_9QIYFZn_SbIZlc-niZD4ZBX6XqRaGuRO_bYB_vV-6sxiuYJRpKHMkITKJ2W2sQ13aKPHQEpY9I7Lw3cOM_y7Ar6RK4z2fAu0Ao9x56pSPq6_J0KeFGBxuzBp6VurnLecy6WzdRliTXeJEILrTQKYJwqRVgIZRLixTjMNBzjT9RCo8xMDLmIj-5yWB6xSKrxaOGxb8VaEb33Yb32ty7Zy2gLa7NQzvYN");'>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative h-[600px] w-full flex flex-col justify-end overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 hover:scale-105"
+          style='background-image: linear-gradient(0deg, rgba(74, 66, 56, 0.95) 0%, rgba(74, 66, 56, 0.6) 50%, rgba(0,0,0,0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0CErGPhqgRnjTbfSakXWaRBtw0yKSGpOZa8VGioKYCFEIF4rFufaldkWQdzX9jvg9jVG-nW35ttSdddsNjPxsAeX0FnmlzPGA8WiqNfVRch1JKERsNwyrSxsLDtW-qV6NqTjALi5_8M0SHfwpckd8Mw7ML2YgCLhw8xfjtXr9QKz_h-FaVjYp9i-z1wBqCuofZxqILsfZDFHMddcE-YxNcUeFPPqMxsQgvHj_lY84fikp05ScmnA44T2a7YvzF8v_1S8ElSnCBMjW");'>
+        </div>
+        <div class="relative z-10 px-6 md:px-20 pb-16 text-white animate-slide-up-fade">
+          <div class="flex flex-wrap gap-2 mb-4 opacity-80 text-sm font-medium">
+            <a class="hover:underline" href="../index.html">Home</a>
+            <span>/</span>
+            <span class="font-bold">About Us</span>
+          </div>
+          <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight uppercase leading-none">Strength in Every
+            <br />Global Connection</h1>
+        </div>
+      </section>
+      <section class="px-6 md:px-20 py-24 max-w-[1400px] mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6 reveal-on-scroll">
+            <span class="text-brand-orange font-bold tracking-widest uppercase text-xs">Our Heritage</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-brand-brown">Decades of Industrial
+              Innovation</h2>
+            <div class="space-y-4 text-steel-grey dark:text-gray-400 text-lg leading-relaxed">
+              <p>Steel Global Services (SGS) was founded with a singular vision: to bridge the gap between heavy
+                industry requirements and cutting-edge material science.</p>
+              <p>Today, we stand as a global leader in providing integrated solutions for the steel and manufacturing
+                sectors, combining traditional expertise with modern sustainability practices.</p>
+            </div>
+            <button class="flex items-center gap-2 text-brand-orange font-bold hover:gap-3 transition-all group">
+              Discover our journey <span
+                class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </button>
+          </div>
+          <div class="relative group">
+            <div
+              class="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white transition-transform duration-700 group-hover:scale-[1.02]"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArIk4mxHaA7HDiZuer8zgCJjGc-l3LSyisdNZTUd5w1ch7coEdE4nlAIo_3CMC0tlTg1WmAnLPx0TwfgACQKy5nRc8J8OskXtg5WzqSJa83BokN1TDzPb4ctPtxHRoC5YtH-4ECa23dZAKlUu9tT_vHp-uZbaJNGpomp3A4p8ubjvdOfKrk3gS5rryPLHrdRVuCwhmJ__qgWbmZCQj-_P-858YUVAeVEGuGUCmWSD3q-NlrbtFKa_nlVrOTSDan1_ljt7U_HEEcy6c"); background-size: cover;'>
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+            </div>
+            <div
+              class="absolute -bottom-6 -left-6 bg-brand-brown text-white p-8 rounded-lg shadow-xl hidden md:block border-b-4 border-brand-orange transition-all group-hover:-translate-y-2">
+              <p class="text-4xl font-black text-brand-orange">SGS</p>
+              <p class="text-sm font-medium opacity-80 uppercase tracking-widest">Global Standards</p>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="relative">
+                <div class="absolute inset-0 rounded-full bg-brand-orange/40 animate-ripple"></div>
+                <div class="absolute inset-0 rounded-full bg-brand-orange/20 animate-ripple"
+                  style="animation-delay: 1s;"></div>
+                <button
+                  class="relative z-10 size-16 bg-brand-orange text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined fill-1 text-3xl">play_arrow</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-white dark:bg-background-dark/50 py-24 px-6 md:px-20 border-y border-[#e9e9f1] dark:border-white/5">
+        <div class="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-8">
+          <div
+            class="p-10 border-l-4 border-brand-orange bg-brand-brown/5 dark:bg-white/5 rounded-r-xl group reveal-on-scroll">
+            <span
+              class="material-symbols-outlined text-5xl text-brand-orange mb-6 group-hover:scale-110 transition-transform">bolt</span>
+            <h3 class="text-2xl font-bold mb-4 text-brand-brown dark:text-brand-orange">Our Mission</h3>
+            <p class="text-steel-grey dark:text-gray-300 leading-relaxed text-lg">To provide world-class steel services
+              through innovation, integrity, and a commitment to excellence that empowers global infrastructure
+              development.</p>
+          </div>
+          <div
+            class="p-10 border-l-4 border-brand-green bg-brand-green/5 dark:bg-white/5 rounded-r-xl group reveal-on-scroll"
+            style="animation-delay: 0.2s;">
+            <span
+              class="material-symbols-outlined text-5xl text-brand-green mb-6 group-hover:scale-110 transition-transform">public</span>
+            <h3 class="text-2xl font-bold mb-4 text-brand-brown dark:text-brand-green">Our Vision</h3>
+            <p class="text-steel-grey dark:text-gray-300 leading-relaxed text-lg">To become the foremost global
+              authority in sustainable industrial services, setting the benchmark for quality and environmental
+              stewardship in the steel industry.</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-6 md:px-20 py-24 overflow-hidden bg-[#f0f0f0] dark:bg-transparent timeline-line-animate">
+        <div class="max-w-[1400px] mx-auto">
+          <h2 class="text-3xl font-extrabold mb-24 text-center text-brand-brown uppercase tracking-widest">The Evolution
+            of SGS</h2>
+          <div class="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+            <div
+              class="absolute top-1/2 left-4 md:left-0 w-1 md:w-full h-1 bg-brand-silver -translate-y-1/2 hidden md:block">
+              <div class="h-full bg-brand-orange timeline-progress w-0 origin-left"></div>
+            </div>
+            <div class="relative z-10 md:w-1/4 bounce-on-scroll">
+              <div
+                class="size-16 bg-brand-orange text-white rounded-full flex items-center justify-center mb-6 border-4 border-white dark:border-background-dark mx-auto shadow-lg">
+                <span class="text-lg font-bold">1985</span>
+              </div>
+              <div class="text-center px-4">
+                <h4 class="font-bold mb-2 text-brand-brown">Establishment</h4>
+                <p class="text-sm text-steel-grey dark:text-gray-400">Founded as a regional steel fabrication partner
+                  with a focus on quality.</p>
+              </div>
+            </div>
+            <div class="relative z-10 md:w-1/4 bounce-on-scroll" style="animation-delay: 0.2s">
+              <div
+                class="size-16 bg-brand-orange text-white rounded-full flex items-center justify-center mb-6 border-4 border-white dark:border-background-dark mx-auto shadow-lg">
+                <span class="text-lg font-bold">2000</span>
+              </div>
+              <div class="text-center px-4">
+                <h4 class="font-bold mb-2 text-brand-brown">Global Reach</h4>
+                <p class="text-sm text-steel-grey dark:text-gray-400">Expanded operations across three continents,
+                  rebranded to Steel Global Services.</p>
+              </div>
+            </div>
+            <div class="relative z-10 md:w-1/4 bounce-on-scroll" style="animation-delay: 0.4s">
+              <div
+                class="size-16 bg-brand-orange text-white rounded-full flex items-center justify-center mb-6 border-4 border-white dark:border-background-dark mx-auto shadow-lg">
+                <span class="text-lg font-bold">2015</span>
+              </div>
+              <div class="text-center px-4">
+                <h4 class="font-bold mb-2 text-brand-brown">Green Initiative</h4>
+                <p class="text-sm text-steel-grey dark:text-gray-400">Pioneered low-emission production protocols across
+                  all service hubs.</p>
+              </div>
+            </div>
+            <div class="relative z-10 md:w-1/4 bounce-on-scroll" style="animation-delay: 0.6s">
+              <div
+                class="size-16 bg-brand-orange text-white rounded-full flex items-center justify-center mb-6 border-4 border-white dark:border-background-dark mx-auto shadow-lg">
+                <span class="text-lg font-bold">2024</span>
+              </div>
+              <div class="text-center px-4">
+                <h4 class="font-bold mb-2 text-brand-brown">Industry Leader</h4>
+                <p class="text-sm text-steel-grey dark:text-gray-400">Leading the transition to fully digital and
+                  sustainable industrial service models.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-background-light dark:bg-background-dark py-24 px-6 md:px-20">
+        <div class="max-w-[1400px] mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 reveal-on-scroll">
+            <div class="max-w-xl">
+              <h2 class="text-3xl font-extrabold mb-4 text-brand-brown">The Minds Shaping SGS</h2>
+              <p class="text-steel-grey dark:text-gray-400">Our leadership combines deep industrial knowledge with the
+                agility of modern enterprise.</p>
+            </div>
+            <button
+              class="px-6 py-2 border-2 border-brand-brown text-brand-brown font-bold rounded-lg hover:bg-brand-brown hover:text-white transition-all">
+              View Executive Team
+            </button>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="group relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer shadow-lg reveal-on-scroll stagger-1">
+              <div
+                class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOrDw_AVwVSRntxn-X7ZdSIdweTlfirl-x6i8fWob0hd_cbPUZ8Q6LBv3fN7Fs_gWmrZvQta1-XFnAdRgGmq3MFuL8uXFY0pa4lji6m9UhiSgGgpx4OwapgJDGAljhdZ21SRoMwAxfnq1MxdZ0jRZcQjHlwiHw6SssaZofjtw_l4KeRKMu6hEMD5r6Pimo3ZJ3P9FDhFtoihs6nYsCDFWMco0NMthrJyrzb-EytGn8gXC4epWuU7K4EKFlX0lrvJhZxQh3X5DRtMkZ");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-brand-orange/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-8 text-white z-20">
+                <p class="text-lg leading-relaxed mb-6 italic">"Our strength comes from our global perspective and local
+                  commitment to excellence."</p>
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">link</span>
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">mail</span>
+                </div>
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 bg-brand-brown p-6 text-white group-hover:opacity-0 transition-opacity z-10">
+                <h4 class="text-xl font-bold uppercase tracking-tight">Sarah Jenkins</h4>
+                <p class="text-xs font-medium opacity-80 uppercase tracking-widest">Chief Executive Officer</p>
+              </div>
+            </div>
+            <div
+              class="group relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer shadow-lg reveal-on-scroll stagger-2">
+              <div
+                class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEzVubBBJzKaHWZRS1Ym72DQSoToamdI89sA91kN_4V0V-o7_l1Pcg_yce-nf9HisIn-fznE3Ledw9VwhFLBWmNJWL-8PntZDCD6cUWjQKGLf61A-MSlAvBRo9wmmt77ZdXjmElKvrwghYI0HdxPF3_vSomXKle5UlXECl0xgF7DrqsdEB0UvAKktyW6Glp9p9GHfljYtqYznjLWed7O5r5q0StVqU0RA-uRwa46ex5A42dQ1brmhdE8qh5tDGciUPDlitirUN-Oo7");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-brand-orange/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-8 text-white z-20">
+                <p class="text-lg leading-relaxed mb-6 italic">"Efficiency is the core of our operations; precision is
+                  the heart of our service."</p>
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">link</span>
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">mail</span>
+                </div>
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 bg-brand-brown p-6 text-white group-hover:opacity-0 transition-opacity z-10">
+                <h4 class="text-xl font-bold uppercase tracking-tight">Marcus Thorne</h4>
+                <p class="text-xs font-medium opacity-80 uppercase tracking-widest">Chief Operating Officer</p>
+              </div>
+            </div>
+            <div
+              class="group relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer shadow-lg reveal-on-scroll stagger-3">
+              <div
+                class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_ato8a0Q8nWS4stW6ssJbkuFp_elWFqggklgsalX3eKMnr53Bai5edoTkGPt2O6cvv4JoUYClOT5X2J1Kjv1pISSA4fACjck-xvK4MppI-taUJeotJO6DzpdkrwnYqEw-ruiDnRYI9CxFLD1969EgxCiv82z8WprJ3uDZyj8FNprXxWuJbwNNWvDp1UmsWFsbT60Q0NJG2EA4WwyZfO0HiunAC-iQQzmyvmEIMLxB2tGTJ85f6Blc9fvyyxemou-2GdXr2W-MpyU8");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-brand-orange/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center p-8 text-white z-20">
+                <p class="text-lg leading-relaxed mb-6 italic">"Innovation at SGS means pushing the boundaries of what's
+                  possible with steel."</p>
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">link</span>
+                  <span class="material-symbols-outlined text-2xl hover:scale-125 transition-transform">mail</span>
+                </div>
+              </div>
+              <div
+                class="absolute inset-x-0 bottom-0 bg-brand-brown p-6 text-white group-hover:opacity-0 transition-opacity z-10">
+                <h4 class="text-xl font-bold uppercase tracking-tight">Elena Rossi</h4>
+                <p class="text-xs font-medium opacity-80 uppercase tracking-widest">VP of Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-brand-brown py-32 px-6 md:px-20 text-center text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+          style="background-image: radial-gradient(circle at 20% 50%, white 1px, transparent 1px); background-size: 50px 50px;">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto space-y-10 reveal-on-scroll">
+          <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tight">Partner with a Global Leader</h2>
+          <p class="text-2xl opacity-80 max-w-2xl mx-auto leading-relaxed">Experience the Steel Global Services
+            difference. Let's engineer the future together with strength and sustainability.</p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+            <a href="../engineering_contact_us_page/code.html"
+              class="px-12 py-5 bg-brand-orange text-white font-extrabold rounded-lg hover:bg-orange-600 transition-all shadow-xl uppercase tracking-widest hover:-translate-y-1">Contact
+              Our Experts</a>
+            <a href="../pipe_&_fittings_catalog/code.html"
+              class="px-12 py-5 border-2 border-white/30 hover:border-white text-white font-extrabold rounded-lg transition-all uppercase tracking-widest">Our
+              Solutions</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white dark:bg-background-dark border-t border-[#e9e9f1] dark:border-white/10 px-6 md:px-20 py-16">
+      <div class="max-w-[1400px] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+          <div class="space-y-6 max-w-xs">
+            <div class="flex items-center gap-3 text-brand-brown dark:text-white">
+              <div class="size-8">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"></circle>
+                  <path d="M15 24C15 19.0294 19.0294 15 24 15C28.9706 15 33 19.0294 33 24" stroke="var(--brand-orange)"
+                    stroke-linecap="round" stroke-width="3"></path>
+                  <circle cx="24" cy="24" fill="var(--brand-green)" r="4"></circle>
+                </svg>
+              </div>
+              <span class="font-extrabold tracking-tighter text-xl uppercase">SGS</span>
+            </div>
+            <p class="text-sm text-steel-grey dark:text-gray-400">Leading the world in integrated steel solutions and
+              industrial innovation since 1985.</p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+            <div class="space-y-4">
+              <h4 class="font-bold text-brand-brown dark:text-white uppercase text-sm">Company</h4>
+              <ul class="space-y-2 text-sm text-steel-grey dark:text-gray-400">
+                <li><a class="hover:text-brand-orange transition-colors" href="code.html">About Us</a></li>
+                <li><a class="hover:text-brand-orange transition-colors" href="#">Careers</a></li>
+                <li><a class="hover:text-brand-orange transition-colors" href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <h4 class="font-bold text-brand-brown dark:text-white uppercase text-sm">Legal</h4>
+              <ul class="space-y-2 text-sm text-steel-grey dark:text-gray-400">
+                <li><a class="hover:text-brand-orange transition-colors" href="#">Privacy Policy</a></li>
+                <li><a class="hover:text-brand-orange transition-colors" href="#">Terms of Service</a></li>
+                <li><a class="hover:text-brand-orange transition-colors" href="#">Compliance</a></li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <h4 class="font-bold text-brand-brown dark:text-white uppercase text-sm">Support</h4>
+              <ul class="space-y-2 text-sm text-steel-grey dark:text-gray-400">
+                <li><a class="hover:text-brand-orange transition-colors"
+                    href="../engineering_contact_us_page/code.html">Contact</a></li>
+                <li><a class="hover:text-brand-orange transition-colors" href="#">Technical Data</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-[#e9e9f1] dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-steel-grey dark:text-gray-500">© 2024 Steel Global Services. All rights reserved.</p>
+          <div class="flex gap-6">
+            <span
+              class="material-symbols-outlined text-steel-grey cursor-pointer hover:text-brand-orange transition-colors">public</span>
+            <span
+              class="material-symbols-outlined text-steel-grey cursor-pointer hover:text-brand-orange transition-colors">mail</span>
+            <span
+              class="material-symbols-outlined text-steel-grey cursor-pointer hover:text-brand-orange transition-colors">share</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

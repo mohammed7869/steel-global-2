@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Request a Quote | Steel Global Services</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Noto+Serif:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#F28C28",
+                        "secondary": "#4B3621",
+                        "background-light": "#f3f5f6",
+                        "background-dark": "#1c2027",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    keyframes: {
+                        'fade-down': {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'slide-up': {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'pulse-subtle': {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'draw': {
+                            'to': { 'stroke-dashoffset': '0' }
+                        },
+                        'spin-slow': {
+                            'from': { transform: 'rotate(0deg)' },
+                            'to': { transform: 'rotate(360deg)' }
+                        },
+                        'slide-right-infinite': {
+                            '0%': { transform: 'translateX(-5px)' },
+                            '50%': { transform: 'translateX(5px)' },
+                            '100%': { transform: 'translateX(-5px)' }
+                        }
+                    },
+                    animation: {
+                        'fade-down': 'fade-down 0.8s ease-out forwards',
+                        'slide-up': 'slide-up 0.8s ease-out forwards',
+                        'pulse-subtle': 'pulse-subtle 3s infinite ease-in-out',
+                        'float': 'float 4s infinite ease-in-out',
+                        'spin-slow': 'spin-slow 8s linear infinite',
+                        'slide-icon': 'slide-right-infinite 2s ease-in-out infinite',
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #F28C28;
+            --accent-color: #4B3621;
+        }
+        .focus-orange:focus {
+            outline: none;
+            border-color: var(--primary-color) !important;
+            box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.2);
+        }
+        .industrial-overlay {
+            background: linear-gradient(rgba(75, 54, 33, 0.7), rgba(28, 32, 39, 0.7));
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            transition: transform 0.3s ease;
+        }
+        .btn-transition {
+            @apply transition-all duration-300 ease-in-out;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+        }
+        .check-path {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: draw 1s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#1d0c10] dark:text-gray-100 transition-colors duration-300">
+    <header
+        class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2">
+                    <div class="size-10 flex items-center justify-center">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" fill="none" r="45" stroke="#4B3621" stroke-width="2"></circle>
+                            <text fill="#F28C28" font-family="Arial" font-size="34" font-weight="bold"
+                                text-anchor="middle" x="50" y="62">SGS</text>
+                        </svg>
+                    </div>
+                    <h2
+                        class="text-xl font-extrabold tracking-tight dark:text-white uppercase text-[var(--accent-color)]">
+                        Steel Global Services</h2>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary btn-transition" href="../index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary btn-transition"
+                    href="../pipe_&_fittings_catalog/code.html">Products</a>
+                <a class="text-sm font-semibold hover:text-primary btn-transition"
+                    href="../corporate_about_us_page/code.html">About Us</a>
+                <a class="text-sm font-semibold hover:text-primary btn-transition"
+                    href="../engineering_contact_us_page/code.html">Contact Us</a>
+                <button
+                    class="bg-[var(--primary-color)] hover:brightness-110 hover:scale-105 text-white px-6 py-2.5 rounded-lg text-sm font-bold btn-transition shadow-md">
+                    Request a Quote
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 lg:px-10 py-8">
+        <nav class="flex items-center gap-2 mb-8 text-sm font-medium text-gray-500 dark:text-gray-400">
+            <a class="hover:text-primary btn-transition" href="../index.html">Home</a>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+            <a class="hover:text-primary btn-transition" href="../pipe_&_fittings_catalog/code.html">Products</a>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+            <span class="text-[var(--secondary)] font-bold">Request a Quote</span>
+        </nav>
+        <div class="mb-12 animate-fade-down">
+            <h1 class="font-serif text-5xl md:text-6xl font-bold mb-4 text-[#1d0c10] dark:text-white">Request a Quote
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl border-l-4 border-[var(--primary-color)] pl-6">
+                Partner with Steel Global Services for precision-engineered steel solutions. Our team of experts is
+                ready to transform your technical requirements into high-performance reality.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-5 space-y-8 animate-fade-down" style="animation-delay: 0.2s;">
+                <div class="relative rounded-xl overflow-hidden shadow-2xl group">
+                    <div class="absolute inset-0 industrial-overlay opacity-40 group-hover:opacity-20 btn-transition">
+                    </div>
+                    <div class="w-full h-[500px] bg-center bg-cover animate-float"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAK-9LpYdEHEGouiUd4u6R91SpjkzTaR2TxhhGnqYNLmADzmkiGcMKlO_yBsieFBbGkzZNEVDdShBQzbjTsYQCPICVIz__yNaepwY89ebdN2T_uE-JPiCLip0NAFN5BWMKOG2lg5XTap2elHLkzOw0vduw_BaO1q-VY6OnrjfXyIR0wUzCgRLYhfApDk7rgwFJgpdZpupF0cdUSICLexQEaMTQ43C9ILxuGgu9Vbgi24MVvrb5TNBQHe-472jlaXA8rNE5UJtQ41-XE');">
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <span
+                            class="inline-block px-3 py-1 bg-[var(--primary-color)] text-[10px] font-bold tracking-widest uppercase rounded mb-4">Steel
+                            Global Services</span>
+                        <h3 class="text-2xl font-serif font-bold text-white">World-class infrastructure solutions since
+                            2004.</h3>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div
+                        class="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm hover:shadow-lg btn-transition group">
+                        <div class="text-[var(--secondary)] mb-4 group-hover:text-primary btn-transition">
+                            <span class="material-symbols-outlined text-3xl">verified</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Expert Consultation</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">20+ years of industrial engineering
+                            excellence.</p>
+                    </div>
+                    <div
+                        class="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark shadow-sm hover:shadow-lg btn-transition group">
+                        <div class="text-[var(--secondary)] mb-4 group-hover:text-primary btn-transition">
+                            <span class="material-symbols-outlined text-3xl">timer</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Fast Response</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Detailed quotes within 24 business hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-7">
+                <div
+                    class="bg-white dark:bg-background-dark p-8 md:p-10 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-gray-100 dark:border-gray-800">
+                    <form action="../sgs_submission_success_page/code.html" class="space-y-12" method="GET">
+                        <div class="animate-slide-up" style="animation-delay: 0.1s;">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span
+                                    class="size-8 rounded-full bg-[var(--primary-color)]/10 text-[var(--secondary)] flex items-center justify-center font-bold text-sm">01</span>
+                                <h3 class="text-xl font-bold">Contact Information</h3>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Full
+                                        Name</label>
+                                    <input
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition"
+                                        placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Company
+                                        Name</label>
+                                    <input
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition"
+                                        placeholder="Engineering Corp" type="text" />
+                                </div>
+                                <div class="md:col-span-2 space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Business
+                                        Email</label>
+                                    <input
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition"
+                                        placeholder="john@company.com" type="email" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-slide-up" style="animation-delay: 0.3s;">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span
+                                    class="size-8 rounded-full bg-[var(--primary-color)]/10 text-[var(--secondary)] flex items-center justify-center font-bold text-sm">02</span>
+                                <h3 class="text-xl font-bold">Project Scope</h3>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Industry
+                                        Sector</label>
+                                    <select
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition">
+                                        <option>Select Sector</option>
+                                        <option>Construction</option>
+                                        <option>Automotive</option>
+                                        <option>Infrastructure</option>
+                                        <option>Aerospace</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Product
+                                        Category</label>
+                                    <select
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition">
+                                        <option>Select Product</option>
+                                        <option>Structural Steel</option>
+                                        <option>Custom Fabrication</option>
+                                        <option>Pre-cast Components</option>
+                                    </select>
+                                </div>
+                                <div class="md:col-span-2 space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-gray-500">Estimated
+                                        Quantity / Scale</label>
+                                    <input
+                                        class="w-full bg-gray-50 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-lg p-3 focus-orange btn-transition"
+                                        placeholder="e.g. 500 Tons or Project Dimensions" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-slide-up" style="animation-delay: 0.5s;">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span
+                                    class="size-8 rounded-full bg-[var(--primary-color)]/10 text-[var(--secondary)] flex items-center justify-center font-bold text-sm">03</span>
+                                <h3 class="text-xl font-bold">Project Documents</h3>
+                            </div>
+                            <div
+                                class="border-2 border-dashed border-gray-200 dark:border-gray-800 rounded-xl p-8 text-center hover:border-[var(--primary-color)] btn-transition cursor-pointer bg-gray-50 dark:bg-gray-900 group">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-gray-400 mb-2 group-hover:text-primary btn-transition">upload_file</span>
+                                <p class="text-sm font-bold mb-1">Drop blueprints or specifications here</p>
+                                <p class="text-xs text-gray-500">PDF, DWG, STEP (Max 25MB)</p>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-[var(--primary-color)] hover:bg-orange-600 text-white py-4 rounded-lg font-bold text-lg shadow-xl shadow-orange-500/20 hover:shadow-orange-500/40 hover:-translate-y-1 active:translate-y-0.5 animate-pulse-subtle btn-transition flex items-center justify-center gap-2 group"
+                            type="submit">
+                            Submit Request
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 btn-transition">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 mb-20 border-t border-gray-200 dark:border-gray-800 pt-16">
+            <h2 class="text-center font-serif text-3xl font-bold mb-12">How Our Quote Process Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-16 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center mb-6 group-hover:bg-[var(--primary-color)] group-hover:text-white btn-transition group-hover:border-transparent">
+                        <span class="material-symbols-outlined text-3xl group-hover:animate-slide-icon">send</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">1. Submit Info</h4>
+                    <p class="text-gray-500 text-sm max-w-xs">Fill out our structured inquiry form with your contact and
+                        project details.</p>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-16 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center mb-6 group-hover:bg-[var(--primary-color)] group-hover:text-white btn-transition group-hover:border-transparent">
+                        <span
+                            class="material-symbols-outlined text-3xl group-hover:animate-spin-slow">engineering</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">2. Expert Review</h4>
+                    <p class="text-gray-500 text-sm max-w-xs">Our engineering team reviews your technical specs to
+                        ensure feasibility.</p>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-16 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center mb-6 group-hover:bg-[var(--primary-color)] group-hover:text-white btn-transition group-hover:border-transparent">
+                        <span
+                            class="material-symbols-outlined text-3xl group-hover:scale-110 btn-transition">request_quote</span>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">3. Receive Quote</h4>
+                    <p class="text-gray-500 text-sm max-w-xs">Receive a comprehensive, itemized quote with projected
+                        lead times.</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="fixed bottom-10 right-10 z-[60] flex flex-col items-center bg-white dark:bg-background-dark p-6 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-800 animate-slide-up max-w-xs">
+            <div class="mb-4">
+                <svg class="w-16 h-16 text-green-500" viewBox="0 0 100 100">
+                    <circle class="opacity-20" cx="50" cy="50" fill="none" r="45" stroke="currentColor"
+                        stroke-width="2"></circle>
+                    <path class="check-path" d="M30 50 L45 65 L70 35" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+                </svg>
+            </div>
+            <h5 class="font-bold text-lg mb-2">Request Submitted!</h5>
+            <div class="w-full h-32 bg-gray-100 dark:bg-gray-800 rounded-lg mb-4 overflow-hidden relative group">
+                <div
+                    class="absolute inset-0 flex items-center justify-center text-gray-400 italic text-[10px] p-4 text-center">
+                    Brochure Mockup Loading...</div>
+                <div
+                    class="absolute inset-x-4 top-4 bottom-0 bg-white dark:bg-gray-700 shadow-lg rounded-t-lg animate-float flex flex-col p-2">
+                    <div class="w-8 h-1 bg-primary rounded-full mb-2"></div>
+                    <div class="space-y-1">
+                        <div class="w-full h-1 bg-gray-200 rounded-full"></div>
+                        <div class="w-2/3 h-1 bg-gray-200 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs text-center text-gray-500">We've sent a confirmation to your email.</p>
+            <button class="mt-4 text-xs font-bold text-primary hover:underline btn-transition">Close Preview</button>
+        </div>
+    </main>
+    <footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm text-gray-500">© 2024 Steel Global Services. All rights reserved.</p>
+            <div class="flex gap-8 text-sm font-medium text-gray-600 dark:text-gray-400">
+                <a class="hover:text-primary btn-transition" href="#">Privacy Policy</a>
+                <a class="hover:text-primary btn-transition" href="#">Terms of Service</a>
+                <a class="hover:text-primary btn-transition" href="#">Global Locations</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

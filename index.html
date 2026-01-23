@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Steel Global Services | SGS Industrial Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#E58919", // Brand Orange
+                        "secondary": "#4A3728", // Brand Brown
+                        "sgs-orange": "#E58919", // Orange
+                        "sgs-brown": "#4A3728", // Brown
+                        "sgs-green": "#558B2F", // Muted Brand Green
+                        "background-light": "#f8fafa",
+                        "background-dark": "#1a1614", // Dark brown-tinted background
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .industrial-grid {
+            background-size: 30px 30px;
+            background-image: radial-gradient(circle, #E5891910 1px, transparent 1px);
+        }
+        .animation-tag {
+            @apply absolute top-4 right-4 z-30 bg-black/70 backdrop-blur-md text-[9px] text-white/90 px-2.5 py-1 rounded-sm border border-white/10 uppercase tracking-[0.25em] pointer-events-none font-bold;
+        }
+        .sticky-nav {
+            @apply transition-all duration-500 ease-in-out;
+        }
+        .btn-hover-icon:hover .material-symbols-outlined {
+            @apply translate-x-2 transition-transform;
+        }
+        .progress-bar-fill {
+            @apply transition-all duration-1000 ease-out origin-left;
+        }
+        .parallax-container {
+            @apply relative overflow-hidden;
+        }
+        .reveal-card {
+            @apply transition-all duration-700;
+        }
+        .mega-menu-trigger:hover .mega-menu {
+            @apply visible opacity-100 translate-y-0;
+        }
+        .mega-menu {
+            @apply invisible opacity-0 translate-y-4 transition-all duration-300 ease-out;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<header class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10 transition-all duration-500 h-20 shrink-0 group/nav">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 h-full flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="flex items-center gap-3 group/logo" href="index.html">
+<div class="bg-primary p-2 rounded-sm transition-all group-hover/logo:bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl">public</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xl font-black tracking-tighter text-secondary dark:text-white uppercase leading-none">Steel Global</span>
+<span class="text-sm font-bold tracking-widest text-primary dark:text-primary uppercase leading-tight">Services</span>
+</div>
+</a>
+<nav class="hidden lg:flex items-center gap-8 h-full">
+<a class="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative group/link" href="index.html">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover/link:w-full transition-all duration-300"></span>
+</a>
+<div class="mega-menu-trigger h-20 flex items-center">
+<a class="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative group/link flex items-center gap-1" href="pipe_&_fittings_catalog/code.html">
+                        Products
+                        <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover/link:w-full transition-all duration-300"></span>
+</a>
+<div class="mega-menu absolute top-20 left-0 w-full bg-white dark:bg-slate-900 shadow-2xl border-t border-slate-100 dark:border-slate-800 z-50">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 py-12 grid grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">factory</span>
+<h3 class="font-black text-sm uppercase tracking-widest">Steel Pipes &amp; Tubes</h3>
+</div>
+<ul class="space-y-3">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Galvanized Pipes</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Stainless Steel</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>MS Pipes</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Seamless Tubes</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">water_drop</span>
+<h3 class="font-black text-sm uppercase tracking-widest">PVC Pipes &amp; Fittings</h3>
+</div>
+<ul class="space-y-3">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>CPVC Systems</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>UPVC Pressure Pipes</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>SWR Solutions</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Agriculture Pipes</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">settings_input_component</span>
+<h3 class="font-black text-sm uppercase tracking-widest">Industrial Fittings</h3>
+</div>
+<ul class="space-y-3">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Precision Flanges</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Forged Elbows</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Industrial Valves</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-secondary dark:hover:text-white transition-colors flex items-center gap-2 group/item" href="#"><span class="w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full group-hover/item:bg-primary"></span>Couplers &amp; Joints</a></li>
+</ul>
+</div>
+<div class="bg-slate-50 dark:bg-secondary/20 p-6 rounded-sm border border-slate-100 dark:border-white/5 relative group/featured overflow-hidden">
+<div class="relative z-10">
+<span class="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-2 block">Featured Product</span>
+<h4 class="text-lg font-black text-secondary dark:text-white uppercase leading-tight mb-4">High-Pressure Alloy Flange</h4>
+<div class="aspect-video mb-6 overflow-hidden rounded-sm bg-slate-200">
+<img alt="Featured Product" class="w-full h-full object-cover transition-transform duration-700 group-hover/featured:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX1h89lWCxbSikPlS5pOv2rvQlPW3jcZ5s_NVIoOTdpGXgDc4Zf6l-BQuAHIqVyKc1YcRpqS6vkaVMLaqzPYYuJD4qn5hMnnMZkpZiPM2SFkTnc_SYoAsQuaCmIb-xm9PGVax2r1dGVUBptNYVWxILlnSQSr45WEK71by-rDvDhHYoaAsXsQhEMOxmN908V4K0igAjfgsONd1n_Em_FsCjwusQXyAxJjYmrSK9HDPMOZzM6al3sQJeMBCr57wfrCbZ7ATijnozXg4c"/>
+</div>
+<a class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-primary hover:text-secondary transition-colors" href="#">
+                                        View Details
+                                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-5 group-hover/featured:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px] text-secondary">engineering</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative group/link" href="corporate_about_us_page/code.html">
+                    About Us
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover/link:w-full transition-all duration-300"></span>
+</a>
+<a class="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative group/link" href="engineering_contact_us_page/code.html">
+                    Contact Us
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover/link:w-full transition-all duration-300"></span>
+</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center bg-slate-100 dark:bg-secondary/20 rounded px-4 py-2 border border-transparent focus-within:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-slate-400 text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-xs w-44 placeholder:text-slate-400 font-medium" placeholder="Search technical catalog..." type="text"/>
+</div>
+<a href="sgs_request_a_quote_page/code.html" class="bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-sm text-xs font-black uppercase tracking-widest transition-all shadow-lg shadow-primary/20 flex items-center gap-2 group/btn btn-hover-icon">
+                Get a Quote
+                <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<div class="animation-tag">Entrance Animation: Fade-in &amp; Slide Up</div>
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/70 to-transparent z-10"></div>
+<img alt="Large industrial pipeline facility" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyGoIqOn5eY54baSCv6pYene2C-CoyKT1P6Aye_ZnsqhNxyiRqj3y2Fl7O4V4wWs_fZtYttQkUDU-geSggQxoIDtUSX8bBCD-qinwKf5cp163OqQ42czL4LpfvYJ21HAeRSqL-T9TJ_E6HEnAIVR-cj9lF6h6aZBiI8tmOflTGXunXjVCIyg3V_dKlC85biSeevxE18W4qPj7Z9VbbPK-7MdcgyIpv_kPc-vk1zbpnynznsJ4At5o4xJVqN1Ejd83e7XCNuF47tsZ"/>
+</div>
+<div class="relative z-20 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 w-full py-20">
+<div class="max-w-3xl space-y-10 animate-in fade-in slide-in-from-bottom-12 duration-1000">
+<div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary text-[10px] font-black uppercase tracking-[0.3em]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Precision Engineering
+                </div>
+<h1 class="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter uppercase">
+                    Structural <br/><span class="text-primary italic">Integrity.</span>
+</h1>
+<p class="text-xl md:text-2xl text-slate-200 font-light max-w-xl leading-relaxed">
+                    Steel Global Services delivers high-end metallurgical solutions for critical infrastructure, energy, and heavy engineering sectors.
+                </p>
+<div class="flex flex-wrap gap-5 pt-4">
+<a href="pipe_&_fittings_catalog/code.html" class="bg-primary hover:bg-white hover:text-secondary text-white px-10 py-5 rounded-sm font-black uppercase tracking-widest transition-all duration-300 transform hover:-translate-y-1 shadow-2xl shadow-primary/30 flex items-center gap-3 group/btn btn-hover-icon">
+                        View Inventory
+                        <span class="material-symbols-outlined transition-transform">bolt</span>
+</a>
+<a href="product_details_&_technical_specs/code.html" class="bg-white/5 hover:bg-white/10 backdrop-blur-xl text-white border border-white/20 px-10 py-5 rounded-sm font-black uppercase tracking-widest transition-all flex items-center gap-3 group/btn btn-hover-icon">
+                        Technical Specs
+                        <span class="material-symbols-outlined transition-transform">download_for_offline</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-white dark:bg-background-dark industrial-grid relative">
+<div class="animation-tag">Staggered Reveal: Staggered Fade-in Animation</div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="space-y-4">
+<span class="text-secondary dark:text-primary font-black uppercase tracking-[0.4em] text-xs">Divisions</span>
+<h2 class="text-4xl md:text-5xl font-black text-secondary dark:text-white uppercase tracking-tighter">Precision Categories</h2>
+<div class="h-1.5 w-24 bg-primary"></div>
+</div>
+<a class="text-secondary dark:text-primary font-black uppercase tracking-widest text-sm flex items-center gap-3 group/link" href="pipe_&_fittings_catalog/code.html">
+                    Browse Full Catalog
+                    <span class="material-symbols-outlined group-hover/link:translate-x-3 transition-transform text-xl">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-slate-100 hover:-translate-y-4 transition-all duration-700 reveal-card">
+<img alt="Structural steel tubes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPIE-GKvya3QHD7CXL6A6AXHkPhP_TPznVP1VvNv7FuSCeesGvAmKJA5g2KHpFiIVlMZ5gTLlOV2B10zJ-kMZwzaDO_ELTPbKlHpjXxWCRyHfxSxKAqH867ARcItF8GQL71Grugnxu43HubSbg4YksTMcgl906mwA9lCElHxkL9Po2wFpPVlnEk2ZVZqIWvko_qv5QdTrr3cOUzPo1ahM6BmU9cV8kSUBkBrXMFcvqEWOFYT_VX395Clh-qdbgYueEsP4IezWX4CgW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent opacity-90 group-hover:from-primary transition-colors duration-700"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<h3 class="text-3xl font-black text-white mb-3 uppercase tracking-tighter">Steel</h3>
+<p class="text-slate-200 text-sm mb-8 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-6 group-hover:translate-y-0 font-medium">High-grade alloy solutions for structural engineering.</p>
+<div class="w-12 h-12 rounded-sm bg-white text-secondary flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-slate-100 hover:-translate-y-4 transition-all duration-700 reveal-card">
+<img alt="Industrial PVC pipes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5zidGqXMTEGH79ZaxsUoyiud_b-HpWf7IxgW0Da3ynRpCB4cz3DxNfkMn3BIhwWNn9LAtKecN4RL0wSgkPeDsT5lVEjgI2BRYeLVjcC6WQYXrOd0HVNH4_UTk9aVj-lrOMYsYCcs1mgjKaPuGxnbep4D9-S6xCG91xwnOUCgVumscT-IhJDsWE1d_AfwCfm6FR5eCQ_xFoC3P05QACqgL74qLtPGC2WV1XDecrHVXfzCS_9zFKT2qCRQSm6m5rGnUnNmdIDP4b9o8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent opacity-90 group-hover:from-primary transition-colors duration-700"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<h3 class="text-3xl font-black text-white mb-3 uppercase tracking-tighter">PVC</h3>
+<p class="text-slate-200 text-sm mb-8 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-6 group-hover:translate-y-0 font-medium">Sustainable thermoplastic solutions for water management.</p>
+<div class="w-12 h-12 rounded-sm bg-white text-secondary flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-slate-100 hover:-translate-y-4 transition-all duration-700 reveal-card">
+<img alt="CPVC Chemical pipes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeR65uiFf_Sllu57gtDrCA8qGHqwWXKXD3zXHd3HeSA3vPFlSlbewwTvL9NgQTnMvQkqwqQZFWvsGFLEFSkwLZbwLAuK275xKTEN0QumfXwuVu1LXSI4PBHUiHiyCDCis4OC0R3aFmj8Hvqu3-5LWK-RQhwI3VVoQa5OENzIQS0trdn5zzS1jEaSchmim7sMZduFozD2vl76wqJCGKVC4rAhs249ME9L90YLthFeqAkCxiocBnTRCfVeCS41u4zA1Eu1NTy-QAeKhQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent opacity-90 group-hover:from-primary transition-colors duration-700"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<h3 class="text-3xl font-black text-white mb-3 uppercase tracking-tighter">CPVC</h3>
+<p class="text-slate-200 text-sm mb-8 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-6 group-hover:translate-y-0 font-medium">Specialized temperature-resistant piping for chemical transport.</p>
+<div class="w-12 h-12 rounded-sm bg-white text-secondary flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl bg-slate-100 hover:-translate-y-4 transition-all duration-700 reveal-card">
+<img alt="Fittings and Valves" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX1h89lWCxbSikPlS5pOv2rvQlPW3jcZ5s_NVIoOTdpGXgDc4Zf6l-BQuAHIqVyKc1YcRpqS6vkaVMLaqzPYYuJD4qn5hMnnMZkpZiPM2SFkTnc_SYoAsQuaCmIb-xm9PGVax2r1dGVUBptNYVWxILlnSQSr45WEK71by-rDvDhHYoaAsXsQhEMOxmN908V4K0igAjfgsONd1n_Em_FsCjwusQXyAxJjYmrSK9HDPMOZzM6al3sQJeMBCr57wfrCbZ7ATijnozXg4c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent opacity-90 group-hover:from-primary transition-colors duration-700"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<h3 class="text-3xl font-black text-white mb-3 uppercase tracking-tighter">Fittings</h3>
+<p class="text-slate-200 text-sm mb-8 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-6 group-hover:translate-y-0 font-medium">Precision components for secure industrial flow control.</p>
+<div class="w-12 h-12 rounded-sm bg-white text-secondary flex items-center justify-center transition-all duration-500 group-hover:rotate-90 group-hover:bg-primary group-hover:text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 relative">
+<div class="animation-tag">Scroll Effect: Parallax Image Background</div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative order-2 lg:order-1 group/parallax parallax-container">
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary/10 rounded-sm -z-10 group-hover/parallax:translate-x-4 transition-transform duration-1000"></div>
+<div class="rounded-sm overflow-hidden shadow-2xl aspect-[4/3] bg-secondary">
+<img alt="High-tech manufacturing plant" class="object-cover w-full h-full scale-110 group-hover:scale-105 transition-transform duration-[3000ms] ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUiZbWPB1Q4Wx2jfP-aAAoPubgof09s0uUZiRhreRYHnE7Rl1aaL-cuyZJtU0Y7a2edcOtR3sgObhrnuB746VVI71OHlGNwSeJU9Yhbhg2GR_mBGfuW1TiZkTpl2z9smXGDUdzNr1GwzRyMWj58WkUFuDGHNlUrQsvE9dSXTL5ucTkR3e8nRLggLodDpC14HTp6j5vK8-qOK8RdIbGJAtVqS-c_pr0FqXIEKgbNGqZAPObfmWQMvlaHu0q7dIau6DcASYYC0tr2wVf"/>
+</div>
+<div class="absolute -top-12 -right-12 bg-white dark:bg-secondary p-10 shadow-3xl border-l-8 border-primary hidden md:block">
+<p class="text-primary text-5xl font-black mb-1">35+</p>
+<p class="text-slate-500 dark:text-slate-300 text-xs uppercase tracking-[0.3em] font-black">Years of Innovation</p>
+</div>
+</div>
+<div class="space-y-10 order-1 lg:order-2">
+<div class="space-y-4">
+<span class="text-primary font-black uppercase tracking-[0.4em] text-sm">Our Global Legacy</span>
+<h2 class="text-5xl md:text-6xl font-black text-secondary dark:text-white leading-[0.95] tracking-tighter uppercase">Forging Infrastructure Resilience</h2>
+</div>
+<div class="space-y-8 text-slate-600 dark:text-slate-400 text-lg leading-relaxed font-medium">
+<p>Established in 1988, <span class="text-secondary dark:text-white font-bold">Steel Global Services (SGS)</span> has evolved into a worldwide leader in high-end industrial systems. Our reputation is built on engineering-focused quality and the relentless pursuit of metallurgical excellence.</p>
+<p>We serve the world's most demanding sectors—from municipal desalination to transcontinental energy grids. Our commitment to sustainability drives us to utilize green manufacturing processes while exceeding the highest international standards.</p>
+</div>
+<button class="flex items-center gap-6 text-secondary dark:text-white font-black uppercase tracking-widest text-sm group/btn btn-hover-icon">
+<span class="bg-secondary text-white p-5 rounded-sm transition-all group-hover/btn:bg-primary shadow-xl shadow-secondary/20">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</span>
+<span class="relative overflow-hidden py-2">
+                            Explore Our Legacy
+                            <span class="absolute bottom-0 left-0 w-full h-1 bg-primary transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></span>
+</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-slate-50 dark:bg-slate-900/40 relative border-y border-slate-200 dark:border-slate-800">
+<div class="animation-tag">Action: Progress Bars Animate on Scroll</div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-4">
+<span class="text-primary font-black uppercase tracking-[0.4em] text-xs">Standards</span>
+<h2 class="text-5xl font-black text-secondary dark:text-white tracking-tighter uppercase leading-none">The Global<br/><span class="text-primary">Benchmark</span></h2>
+</div>
+<div class="space-y-10">
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-16 h-16 bg-white dark:bg-secondary/50 rounded-sm flex items-center justify-center text-primary shadow-xl border border-slate-100 dark:border-slate-700 transition-all group-hover:bg-primary group-hover:text-white group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl">security</span>
+</div>
+<div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-3">Extreme Reliability</h3>
+<p class="text-slate-500 dark:text-slate-400 font-medium">Components tested to 175% of rated pressure, ensuring absolute safety in critical chemical transport systems.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="flex-shrink-0 w-16 h-16 bg-white dark:bg-secondary/50 rounded-sm flex items-center justify-center text-primary shadow-xl border border-slate-100 dark:border-slate-700 transition-all group-hover:bg-primary group-hover:text-white group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl">settings_input_component</span>
+</div>
+<div>
+<h3 class="text-xl font-black uppercase tracking-tight mb-3">Custom Fabrication</h3>
+<p class="text-slate-500 dark:text-slate-400 font-medium">Proprietary CNC bending and automated welding that reduces installation costs by up to 25% across large-scale projects.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-16 -right-16 w-80 h-80 bg-primary/5 rounded-full blur-[100px] z-0"></div>
+<div class="relative z-10 bg-slate-950 rounded-sm overflow-hidden shadow-[0_40px_100px_rgba(229,137,25,0.2)] border border-white/5">
+<div class="p-10 border-b border-white/10">
+<div class="flex items-center gap-6 mb-10">
+<div class="w-16 h-16 rounded-sm bg-primary flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-3xl">query_stats</span>
+</div>
+<div>
+<p class="text-white font-black text-xl uppercase tracking-tighter leading-none">SGS Performance Metrics</p>
+<p class="text-slate-500 text-xs font-bold uppercase tracking-widest mt-2">Quality Control Lab Data</p>
+</div>
+</div>
+<div class="space-y-10">
+<div class="space-y-3">
+<div class="flex justify-between text-xs text-slate-400 font-black uppercase tracking-widest">
+<span>Tensile Strength Index</span>
+<span class="text-white">99.8%</span>
+</div>
+<div class="w-full bg-white/5 h-3 rounded-full overflow-hidden p-0.5">
+<div class="bg-primary h-full w-[99%] progress-bar-fill"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs text-slate-400 font-black uppercase tracking-widest">
+<span>Chemical Inertness</span>
+<span class="text-white">97.4%</span>
+</div>
+<div class="w-full bg-white/5 h-3 rounded-full overflow-hidden p-0.5">
+<div class="bg-secondary h-full w-[97%] progress-bar-fill border border-primary/30 delay-200"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-10 grid grid-cols-3 gap-8 bg-white/5 backdrop-blur-md">
+<div class="text-center group/metric">
+<p class="text-3xl font-black text-white group-hover/metric:text-primary transition-colors">50k+</p>
+<p class="text-slate-500 text-[9px] uppercase font-black tracking-[0.2em] mt-2">Deployments</p>
+</div>
+<div class="text-center group/metric">
+<p class="text-3xl font-black text-white group-hover/metric:text-primary transition-colors">140</p>
+<p class="text-slate-500 text-[9px] uppercase font-black tracking-[0.2em] mt-2">Nations</p>
+</div>
+<div class="text-center group/metric">
+<p class="text-3xl font-black text-white group-hover/metric:text-primary transition-colors">0.01%</p>
+<p class="text-slate-500 text-[9px] uppercase font-black tracking-[0.2em] mt-2">Tolerance</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-white dark:bg-background-dark industrial-grid relative">
+<div class="animation-tag">Interactions: Hover Lift &amp; Micro-interactions</div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="space-y-4">
+<span class="text-primary font-black uppercase tracking-[0.4em] text-xs">Intelligence</span>
+<h2 class="text-4xl md:text-5xl font-black text-secondary dark:text-white uppercase tracking-tighter">Technical Insights</h2>
+<div class="h-1.5 w-24 bg-secondary"></div>
+</div>
+<button class="bg-slate-100 dark:bg-secondary/30 text-secondary dark:text-white px-8 py-4 rounded-sm font-black uppercase tracking-widest text-xs hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1 shadow-lg border border-slate-200 dark:border-slate-700">
+                    Industry Archives
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group bg-white dark:bg-secondary/10 border border-slate-200 dark:border-slate-800 rounded-sm overflow-hidden hover:shadow-[0_30px_60px_-15px_rgba(229,137,25,0.15)] hover:-translate-y-4 transition-all duration-500">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img alt="Steel metallurgy close up" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfliX_7PR1eSOAZW3go4atftn_JVYGuA8YnujYM70dzAvEDI3F879sDMano074ST9uiTw5wszf4fndApmmhYhxIsd2bypCKFbHB9k1Mfq6Iwi_HaifaPte8mK_fi2oGmO7VvTvp7M6No9pvjh5a9sQGiwY6HIiHeQlTY6v1ElWEMf9E1zjlIQF1xpug9ABfwaLfbAcoUt2N3vh-qDO7drxQ3Lt4Nk2e09Y6kHlc4-J9lX5yRu9lzNtbVZHjc2QkVfo2rEaqMrOJhtv"/>
+<div class="absolute top-6 left-6 bg-secondary text-white px-4 py-1 rounded-sm text-[10px] font-black uppercase tracking-widest shadow-2xl">Whitepaper</div>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-5 text-[10px] text-slate-400 mb-6 font-black uppercase tracking-widest">
+<span class="flex items-center gap-2 group-hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">event</span> Oct 24, 2024</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">hourglass_empty</span> 12 Min Read</span>
+</div>
+<h3 class="text-2xl font-black mb-5 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">Metallurgical Resilience in Arctic Conditions</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed font-medium line-clamp-3">Evaluating specific alloy compositions designed to maintain ductility and impact resistance in sub-zero industrial environments.</p>
+<a class="inline-flex items-center gap-3 text-secondary dark:text-primary font-black uppercase tracking-widest text-xs group/link btn-hover-icon" href="#">
+                            Read Report
+                            <span class="material-symbols-outlined text-lg transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group bg-white dark:bg-secondary/10 border border-slate-200 dark:border-slate-800 rounded-sm overflow-hidden hover:shadow-[0_30px_60px_-15px_rgba(229,137,25,0.15)] hover:-translate-y-4 transition-all duration-500">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img alt="Industrial site overview" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCgmdcqUX9V4Y4hs6jUybuuHnsZRavQNP954XX5OovHbuDG4ZAnSmQli3B4C7jJcCs6dR73U1Lf7-qmcENlGgKAIQrb-SOnkdFQWn53xjA5ISdXcrL5YC_Lp1EtYwjcbxZUSuCOE0CjZeQvi7AtKmLthiLYcqv0GJY-unGiPCeRISSva0Exv49mxtPTneylZG6zCl2Z1gQ56f4LjMfnFlnunTJeNTwYEtQzQ0esv5PncdvmosF_WBowbmsyBxU2XFnIQXnTtEmgnTk"/>
+<div class="absolute top-6 left-6 bg-primary text-white px-4 py-1 rounded-sm text-[10px] font-black uppercase tracking-widest shadow-2xl">Sustainability</div>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-5 text-[10px] text-slate-400 mb-6 font-black uppercase tracking-widest">
+<span class="flex items-center gap-2 group-hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">event</span> Oct 18, 2024</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">hourglass_empty</span> 8 Min Read</span>
+</div>
+<h3 class="text-2xl font-black mb-5 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">The Future of Circular Steel Economies</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed font-medium line-clamp-3">How SGS is implementing end-of-life recovery protocols for large-scale industrial piping systems to reduce carbon footprints.</p>
+<a class="inline-flex items-center gap-3 text-secondary dark:text-primary font-black uppercase tracking-widest text-xs group/link btn-hover-icon" href="#">
+                            Read Report
+                            <span class="material-symbols-outlined text-lg transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group bg-white dark:bg-secondary/10 border border-slate-200 dark:border-slate-800 rounded-sm overflow-hidden hover:shadow-[0_30px_60px_-15px_rgba(229,137,25,0.15)] hover:-translate-y-4 transition-all duration-500">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img alt="Quality control testing" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOEfgD6IZbLgfqM1NYuqxPEMoA3ZneBKfCDr2dJ1NR0ZqXlvgu7pg1vZiL3yLFvx7vGY8T-IEwht5PofQJo8lPgyC2Qstfy28nhkS3KVk2P8gmz6xCIuVhlammgpG4GLyLGocx9itu0ENRrnVTWcpSa5BvMqFCd2xRvJUcdpwIOZ1HwVHUih1LboIYCcKJcNB-z08JXpv_8rjG8aYZ65ixHxxgCplbFGqJkxuH45S_1mpsqSFdQWpLxXpoceqSZqv67JLGmRsvht5q"/>
+<div class="absolute top-6 left-6 bg-secondary text-white px-4 py-1 rounded-sm text-[10px] font-black uppercase tracking-widest shadow-2xl">Engineering</div>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-5 text-[10px] text-slate-400 mb-6 font-black uppercase tracking-widest">
+<span class="flex items-center gap-2 group-hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">event</span> Oct 12, 2024</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">hourglass_empty</span> 15 Min Read</span>
+</div>
+<h3 class="text-2xl font-black mb-5 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">Advanced Hydraulics in High-Pressure PVC</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed font-medium line-clamp-3">Technical analysis of laminar flow efficiency in next-generation smooth-bore thermoplastic transport systems.</p>
+<a class="inline-flex items-center gap-3 text-secondary dark:text-primary font-black uppercase tracking-widest text-xs group/link btn-hover-icon" href="#">
+                            Read Report
+                            <span class="material-symbols-outlined text-lg transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative overflow-hidden bg-secondary">
+<div class="absolute inset-0 opacity-5 industrial-grid"></div>
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 text-center relative z-10">
+<h2 class="text-4xl md:text-6xl font-black text-white mb-8 uppercase tracking-tighter">Secure Your Supply Chain Today</h2>
+<p class="text-slate-300 text-xl mb-12 max-w-3xl mx-auto font-medium">Partner with Steel Global Services for engineering consultation and rapid global logistics support. Our engineers are ready for your specifications.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a href="sgs_request_a_quote_page/code.html" class="bg-primary hover:bg-white hover:text-secondary text-white px-12 py-5 rounded-sm font-black uppercase tracking-widest text-sm transition-all shadow-2xl shadow-black/40 transform hover:-translate-y-1 active:scale-95 group/btn btn-hover-icon flex items-center justify-center gap-3">
+                    Submit RFQ
+                    <span class="material-symbols-outlined text-xl transition-transform">send</span>
+</a>
+<a href="engineering_contact_us_page/code.html" class="bg-transparent border-2 border-white/20 hover:border-white/100 text-white px-12 py-5 rounded-sm font-black uppercase tracking-widest text-sm transition-all group/btn btn-hover-icon flex items-center justify-center gap-3">
+                    Consult an Engineer
+                    <span class="material-symbols-outlined text-xl transition-transform">engineering</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#120f0d] text-slate-500 py-20">
+<div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-20">
+<div class="lg:col-span-2 space-y-8">
+<a class="flex items-center gap-3 group/footer-logo" href="index.html">
+<div class="bg-primary p-2 rounded-sm transition-transform group-hover/footer-logo:scale-110">
+<span class="material-symbols-outlined text-white text-3xl">public</span>
+</div>
+<div class="flex flex-col">
+<span class="text-2xl font-black tracking-tighter text-white uppercase leading-none">Steel Global</span>
+<span class="text-sm font-bold tracking-widest text-primary uppercase leading-tight">Services</span>
+</div>
+</a>
+<p class="max-w-sm text-sm leading-relaxed font-medium">Global headquarters for industrial metallurgical engineering. Driving the next generation of infrastructure through precision manufacturing and sustainable resource management since 1988.</p>
+<div class="flex gap-5">
+<a class="w-12 h-12 rounded-sm border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white group" href="#">
+<span class="material-symbols-outlined text-xl transition-transform group-hover:rotate-12">language</span>
+</a>
+<a class="w-12 h-12 rounded-sm border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white group" href="#">
+<span class="material-symbols-outlined text-xl transition-transform group-hover:rotate-12">alternate_email</span>
+</a>
+<a class="w-12 h-12 rounded-sm border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white group" href="#">
+<span class="material-symbols-outlined text-xl transition-transform group-hover:rotate-12">call</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-xs">Divisions</h4>
+<ul class="space-y-5 text-xs font-black uppercase tracking-widest">
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Steel Alloy</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Polymer Systems</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Thermal CPVC</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Flow Solutions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-xs">Resources</h4>
+<ul class="space-y-5 text-xs font-black uppercase tracking-widest">
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Technical Lab</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Safety Data</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Global Compliance</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-black mb-8 uppercase tracking-[0.3em] text-xs">SGS Corp</h4>
+<ul class="space-y-5 text-xs font-black uppercase tracking-widest">
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Investors</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="#"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Careers</a></li>
+<li><a class="hover:text-primary transition-colors flex items-center gap-3 group" href="engineering_contact_us_page/code.html"><span class="w-0 group-hover:w-3 h-0.5 bg-primary transition-all"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase font-black tracking-[0.3em]">
+<p>© 2024 Steel Global Services (SGS) Industrial. All rights reserved.</p>
+<div class="flex gap-10">
+<a class="hover:text-white transition-colors" href="#">Legal Notice</a>
+<a class="hover:text-white transition-colors" href="#">Ethics Policy</a>
+<a class="hover:text-white transition-colors" href="#">Privacy Hub</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

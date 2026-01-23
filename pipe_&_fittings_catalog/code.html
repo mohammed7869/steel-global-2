@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SGS Product Catalog | Steel Global Services</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Work+Sans:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#F28C28", "secondary": "#4A3728", "accent": "#F28C28",
+                        "background-light": "#fdfdfd",
+                        "background-dark": "#1a1614",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#25211e",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #F28C28;
+            --secondary-color: #4A3728;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, h4, .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e2e2; border-radius: 10px; }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #3d342d; }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <header
+        class="sticky top-0 z-50 w-full border-b border-secondary/10 bg-surface-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="size-10 bg-[var(--secondary-color)] rounded-full flex items-center justify-center text-white overflow-hidden p-1">
+                        <span class="material-symbols-outlined text-2xl">public</span>
+                    </div>
+                    <div class="flex flex-col leading-tight">
+                        <h2 class="text-[var(--secondary-color)] dark:text-white text-xl font-bold tracking-tight">SGS
+                        </h2>
+                        <span class="text-[var(--primary-color)] text-[10px] font-bold uppercase tracking-wider">Steel
+                            Global Services</span>
+                    </div>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-secondary dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                        href="../index.html">Home</a>
+                    <a class="text-primary text-sm font-bold border-b-2 border-primary transition-colors"
+                        href="#">Products</a>
+                    <a class="text-secondary dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                        href="../corporate_about_us_page/code.html">About Us</a>
+                    <a class="text-secondary dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors"
+                        href="../engineering_contact_us_page/code.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-6">
+                <div
+                    class="hidden md:flex items-center bg-secondary/5 dark:bg-white/5 rounded-full px-4 py-2 border border-secondary/10">
+                    <span
+                        class="material-symbols-outlined text-secondary/60 dark:text-slate-400 text-xl mr-2">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-secondary/40"
+                        placeholder="Search catalog..." type="text" />
+                </div>
+                <a href="../sgs_request_a_quote_page/code.html"
+                    class="bg-[var(--primary-color)] text-white px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:brightness-110 shadow-md transition-all flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">mail</span>
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 py-8">
+        <nav class="flex items-center gap-2 mb-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+            <a class="hover:text-primary transition-colors flex items-center gap-1" href="../index.html">
+                <span class="material-symbols-outlined text-lg">home</span>
+                Home
+            </a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <a class="hover:text-primary transition-colors" href="#">Catalog</a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <span class="text-secondary dark:text-white font-semibold">Pipes &amp; Fittings</span>
+        </nav>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <aside class="w-full lg:w-72 flex-shrink-0 space-y-8">
+                <div
+                    class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-secondary/5 shadow-sm sticky top-28">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-lg font-bold text-secondary dark:text-white flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">tune</span>
+                            Filters
+                        </h3>
+                        <button
+                            class="text-xs font-bold text-secondary/60 hover:text-primary uppercase tracking-wider">Reset</button>
+                    </div>
+                    <div class="mb-8">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Material</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center group cursor-pointer">
+                                <input checked=""
+                                    class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 border-2 bg-transparent text-primary focus:ring-primary focus:ring-offset-0"
+                                    type="checkbox" />
+                                <span
+                                    class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">Galvanized
+                                    Steel</span>
+                            </label>
+                            <label class="flex items-center group cursor-pointer">
+                                <input
+                                    class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 border-2 bg-transparent text-primary focus:ring-primary focus:ring-offset-0"
+                                    type="checkbox" />
+                                <span
+                                    class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">PVC
+                                    (Schedule 40/80)</span>
+                            </label>
+                            <label class="flex items-center group cursor-pointer">
+                                <input
+                                    class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 border-2 bg-transparent text-primary focus:ring-primary focus:ring-offset-0"
+                                    type="checkbox" />
+                                <span
+                                    class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">UPVC
+                                    Industrial</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Application</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center group cursor-pointer">
+                                <input
+                                    class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 border-2 bg-transparent text-primary focus:ring-primary focus:ring-offset-0"
+                                    type="checkbox" />
+                                <span
+                                    class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">Agriculture</span>
+                            </label>
+                            <label class="flex items-center group cursor-pointer">
+                                <input checked=""
+                                    class="h-5 w-5 rounded border-slate-300 dark:border-slate-600 border-2 bg-transparent text-primary focus:ring-primary focus:ring-offset-0"
+                                    type="checkbox" />
+                                <span
+                                    class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-primary transition-colors">Industrial</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Diameter (mm)</h4>
+                        <div class="px-2 pt-2 pb-6">
+                            <div class="relative h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full">
+                                <div class="absolute inset-y-0 left-[20%] right-[30%] bg-primary rounded-full"></div>
+                                <div
+                                    class="absolute top-1/2 left-[20%] -translate-y-1/2 size-5 bg-white border-2 border-primary rounded-full shadow-md cursor-pointer">
+                                </div>
+                                <div
+                                    class="absolute top-1/2 right-[30%] -translate-y-1/2 size-5 bg-white border-2 border-primary rounded-full shadow-md cursor-pointer">
+                                </div>
+                            </div>
+                            <div class="flex justify-between mt-4 text-xs font-bold text-secondary dark:text-slate-300">
+                                <span>25mm</span>
+                                <span>450mm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full mt-6 py-3 bg-primary text-white rounded-lg text-sm font-bold hover:brightness-110 shadow-sm transition-all">
+                        Apply Filters
+                    </button>
+                </div>
+            </aside>
+            <div class="flex-1">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+                    <div>
+                        <h1 class="text-3xl font-bold text-secondary dark:text-white">Pipes &amp; Tubing</h1>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Industrial grade solutions by Steel
+                            Global Services</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <label class="text-sm font-semibold text-slate-400 mr-2">Sort by:</label>
+                        <select
+                            class="bg-surface-light dark:bg-surface-dark border-secondary/10 rounded-lg text-sm font-medium focus:ring-primary focus:border-primary px-4 py-2 pr-10">
+                            <option>Most Popular</option>
+                            <option>Size: Small to Large</option>
+                        </select>
+                        <div class="flex border border-secondary/10 rounded-lg overflow-hidden">
+                            <button class="p-2 bg-secondary text-white"><span
+                                    class="material-symbols-outlined">grid_view</span></button>
+                            <button class="p-2 bg-surface-light dark:bg-surface-dark text-slate-400"><span
+                                    class="material-symbols-outlined">format_list_bulleted</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div
+                        class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-secondary/5 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all overflow-hidden flex flex-col">
+                        <div class="aspect-[4/3] bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent"></div>
+                            <img alt="Steel pipe"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmQENYNDfMG57oaaPm0nkQlfln5Iqa2zb04_g_Q-qVdOIDPHB_eXc9v4eezDrZX5QQmMcamza4Jbi_BW07arYR4faVdzKC2laBaFmDOob4cxj9P2gAeFTeuixKfHHzRhbT1PLNg95QRE2oJdBk69M5hzkLaXL9ICDk7xNMzMHxRUahqiWP3RvaqHXyMKoCTM--oUl5OTR4fnwn2I3tfySLXgpK7JYW254Pyh3O_4iH7DqrUJfWC6aizv_kcJ3ALihW5TTkynDr5mPh" />
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="bg-secondary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Steel</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="mb-4">
+                                <h3
+                                    class="text-lg font-bold text-secondary dark:text-white group-hover:text-primary transition-colors">
+                                    Sch 40 Carbon Steel Pipe</h3>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Code: CSP-40-2024</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Pressure
+                                    </p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">PN 25</p>
+                                </div>
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Length
+                                    </p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">6.0 Meters</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <a href="../sgs_request_a_quote_page/code.html"
+                                    class="w-full bg-[var(--primary-color)] hover:brightness-110 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">shopping_cart_checkout</span>
+                                    Enquire Now
+                                </a>
+                                <button
+                                    class="w-full border-2 border-secondary/10 hover:border-primary/30 text-secondary dark:text-slate-300 font-bold py-2.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-xl">download</span>
+                                    Tech Specs (PDF)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-secondary/5 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all overflow-hidden flex flex-col">
+                        <div class="aspect-[4/3] bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent"></div>
+                            <img alt="PVC pipe"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoQ6wEF4CIZH43cP3s28Vxwf1JFNbwoAcaVxgVGxrViodoDRaImNFDF2yTi42X3VuVJz90rwTQNkJFUWV94AsloizrksUMpM129yj-xxJ5y5sQCSnyw-ELhNgIEP5s5F8dBHXxrkf7MHo4DK2_fgKJ2MtYFxoJCK7AL9uetE4h_ppnEHqfiLLzhqz9zPjJQ-Hq1F-doZAmwM9n9PgN29NXw1XAIN_uQ2m949ooAgyitKHTWiru1Ns-ObiAgCYUCft8XD5OhjdX-gMD" />
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="bg-blue-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">PVC</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="mb-4">
+                                <h3
+                                    class="text-lg font-bold text-secondary dark:text-white group-hover:text-primary transition-colors">
+                                    High Pressure PVC-U Pipe</h3>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Code: PVU-HP-110</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Pressure
+                                    </p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">16 Bar</p>
+                                </div>
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Diameter
+                                    </p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">20-400mm</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <a href="../sgs_request_a_quote_page/code.html"
+                                    class="w-full bg-[var(--primary-color)] hover:brightness-110 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">shopping_cart_checkout</span>
+                                    Enquire Now
+                                </a>
+                                <button
+                                    class="w-full border-2 border-secondary/10 hover:border-primary/30 text-secondary dark:text-slate-300 font-bold py-2.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-xl">download</span>
+                                    Tech Specs (PDF)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-surface-light dark:bg-surface-dark rounded-xl border border-secondary/5 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all overflow-hidden flex flex-col">
+                        <div class="aspect-[4/3] bg-slate-100 dark:bg-slate-800 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent"></div>
+                            <img alt="Pipe fittings"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUeB1--wKNNdqg_Q3qzSE-uD0fW1u9yazv-Kb1A17mTRkX8cifoXiV55WrPJ33CR3DYPVCrE_DtcWfmXN1hifTJG3WzAbtAeish9N86a4ivIjz_vq42WNslBVhMH6RZ6QxUHZYY7kBWHfP3yWQNjaI0YxxZAiTkAsDU9nKMwUGxp27RLdorFSeJc-bSNuS6mWB4gGaaQCXdMVskWPusZo7wnsckPrGEqWjud0rNm4z2cPld7kzQPaVftLx9fySrO29-5HwdNHrSEG" />
+                            <div class="absolute top-4 left-4">
+                                <span
+                                    class="bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">Fittings</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="mb-4">
+                                <h3
+                                    class="text-lg font-bold text-secondary dark:text-white group-hover:text-primary transition-colors">
+                                    UPVC Elbow 90°</h3>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Code: UP-EL-90</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">
+                                        Connection</p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">Solvent</p>
+                                </div>
+                                <div class="bg-secondary/5 dark:bg-white/5 p-3 rounded-lg">
+                                    <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tighter">Temp</p>
+                                    <p class="text-sm font-bold text-secondary dark:text-slate-200">60°C Max</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto space-y-3">
+                                <a href="../sgs_request_a_quote_page/code.html"
+                                    class="w-full bg-[var(--primary-color)] hover:brightness-110 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">shopping_cart_checkout</span>
+                                    Enquire Now
+                                </a>
+                                <button
+                                    class="w-full border-2 border-secondary/10 hover:border-primary/30 text-secondary dark:text-slate-300 font-bold py-2.5 rounded-lg text-sm transition-all flex items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined text-xl">download</span>
+                                    Tech Specs (PDF)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 flex items-center justify-center gap-2">
+                    <button
+                        class="size-10 rounded-lg flex items-center justify-center border border-secondary/10 text-secondary hover:bg-primary hover:text-white transition-all">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button
+                        class="size-10 rounded-lg flex items-center justify-center bg-primary text-white font-bold">1</button>
+                    <button
+                        class="size-10 rounded-lg flex items-center justify-center border border-secondary/10 text-secondary hover:bg-primary/5 transition-all font-bold">2</button>
+                    <button
+                        class="size-10 rounded-lg flex items-center justify-center border border-secondary/10 text-secondary hover:bg-primary/5 transition-all font-bold">3</button>
+                    <span class="px-2 text-slate-400">...</span>
+                    <button
+                        class="size-10 rounded-lg flex items-center justify-center border border-secondary/10 text-secondary hover:bg-primary hover:text-white transition-all">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-20 border-t border-secondary/10 bg-secondary/5 py-12">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <div class="size-8 bg-secondary rounded-full flex items-center justify-center text-white p-1">
+                    <span class="material-symbols-outlined text-sm">public</span>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-secondary dark:text-white text-md font-bold tracking-tight">Steel Global Services
+                    </h2>
+                </div>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 Steel Global Services. All technical specs
+                subject to ISO 9001:2015.</p>
+            <div class="flex gap-6">
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">public</span></a>
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">description</span></a>
+                <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                        class="material-symbols-outlined">support_agent</span></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

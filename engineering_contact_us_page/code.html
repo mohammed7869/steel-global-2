@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Steel Global Services (SGS)</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-burgundy": "#800000",
+                        "brand-orange": "#F37021",
+                        "brand-green": "#4D811D",
+                        "brand-brown": "#433B31",
+                        "primary": "#F37021",
+                        "secondary": "#433B31",
+                        "charcoal": "#343A40",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#141b1e",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        :root {
+            --brand-burgundy: #800000;
+            --brand-orange: #F37021;
+            --brand-green: #4D811D;
+            --brand-brown: #433B31;
+        }
+        .industrial-grid {
+            background-image: radial-gradient(#F37021 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-charcoal dark:text-gray-200 antialiased overflow-x-hidden">
+    <header
+        class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex items-center">
+                    <div class="relative w-10 h-10 flex items-center justify-center">
+                        <svg class="w-full h-full" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" stroke="#800000" stroke-width="2"></circle>
+                            <circle cx="50" cy="50" r="40" stroke="#F37021" stroke-dasharray="20 10" stroke-width="2">
+                            </circle>
+                            <path d="M30 40 Q 50 20 70 40 T 70 70 Q 50 90 30 70 T 30 40" fill="none" stroke="#4D811D"
+                                stroke-width="3"></path>
+                            <text dominant-baseline="middle" fill="#433B31" font-family="Arial" font-size="24"
+                                font-weight="bold" text-anchor="middle" x="50%" y="55%">SGS</text>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="text-brand-brown dark:text-white text-xl font-extrabold tracking-tight uppercase">Steel
+                    Global Services</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="hover:text-brand-orange transition-colors font-medium" href="../index.html">Home</a>
+                <a class="hover:text-brand-orange transition-colors font-medium"
+                    href="../pipe_&_fittings_catalog/code.html">Products</a>
+                <a class="hover:text-brand-orange transition-colors font-medium"
+                    href="../corporate_about_us_page/code.html">About Us</a>
+                <a class="text-brand-orange font-bold border-b-2 border-brand-orange" href="#">Contact Us</a>
+            </nav>
+            <a href="../sgs_request_a_quote_page/code.html"
+                class="bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-brand-orange/20">
+                Get a Quote
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="relative bg-brand-brown dark:bg-background-dark py-20 overflow-hidden">
+            <div class="absolute inset-0 industrial-grid"></div>
+            <div class="relative max-w-7xl mx-auto px-6">
+                <nav class="flex items-center gap-2 mb-8 text-white/60 text-sm">
+                    <a class="hover:text-white" href="../index.html">Home</a>
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span class="text-brand-orange font-semibold">Contact Steel Global Services</span>
+                </nav>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight max-w-2xl leading-tight">
+                    Global Expertise for Your <span class="text-brand-orange">Industrial Infrastructure</span>
+                </h1>
+                <p class="mt-6 text-xl text-white/80 max-w-xl leading-relaxed">
+                    Connect with Steel Global Services for specialized technical support and world-class industrial
+                    material solutions.
+                </p>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-96 h-96 border-[40px] border-brand-orange/10 rounded-full">
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 -mt-12 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col gap-4">
+                    <div
+                        class="w-12 h-12 bg-brand-orange/10 rounded-lg flex items-center justify-center text-brand-orange">
+                        <span class="material-symbols-outlined text-3xl font-bold">location_on</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-1">Our Office</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            1230 Industrial Way, Manufacturing District,<br />Houston, TX 75001
+                        </p>
+                    </div>
+                    <a class="text-brand-green dark:text-brand-green text-sm font-bold flex items-center gap-1 mt-auto group"
+                        href="#">
+                        Get Directions <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col gap-4">
+                    <div
+                        class="w-12 h-12 bg-brand-green/10 rounded-lg flex items-center justify-center text-brand-green">
+                        <span class="material-symbols-outlined text-3xl font-bold">call</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-1">Call Us</h3>
+                        <div class="flex flex-col gap-1">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Sales: <a
+                                    class="font-semibold text-charcoal dark:text-white hover:text-brand-orange"
+                                    href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Support: <a
+                                    class="font-semibold text-charcoal dark:text-white hover:text-brand-orange"
+                                    href="tel:+15559876543">+1 (555) 987-6543</a></p>
+                        </div>
+                    </div>
+                    <span class="text-gray-400 text-xs italic mt-auto">Mon-Fri: 8:00 AM - 6:00 PM CST</span>
+                </div>
+                <div
+                    class="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-xl border border-gray-100 dark:border-gray-800 flex flex-col gap-4">
+                    <div
+                        class="w-12 h-12 bg-brand-orange/10 rounded-lg flex items-center justify-center text-brand-orange">
+                        <span class="material-symbols-outlined text-3xl font-bold">mail</span>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold mb-1">Email Us</h3>
+                        <div class="flex flex-col gap-1">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Inquiries: <a
+                                    class="font-semibold text-charcoal dark:text-white hover:text-brand-green"
+                                    href="mailto:inquiries@steelglobal.com">inquiries@steelglobal.com</a></p>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">RFQ: <a
+                                    class="font-semibold text-charcoal dark:text-white hover:text-brand-green"
+                                    href="mailto:rfq@steelglobal.com">rfq@steelglobal.com</a></p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-brand-burgundy/60 mt-auto font-medium">Standard response time: 2-4 hours</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div
+                class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-gray-100 dark:border-gray-800">
+                <div class="lg:w-7/12 p-8 md:p-12 lg:p-16">
+                    <div class="mb-10">
+                        <h2 class="text-3xl font-extrabold mb-4">Send a Message</h2>
+                        <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Have a specific technical requirement or need a custom quote? Our engineers at SGS are ready
+                            to review your project specifications.
+                        </p>
+                    </div>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Full
+                                    Name</label>
+                                <input
+                                    class="w-full bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-brand-orange/20 focus:border-brand-orange outline-none transition-all"
+                                    placeholder="John Doe" type="text" />
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Professional
+                                    Email</label>
+                                <input
+                                    class="w-full bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-brand-orange/20 focus:border-brand-orange outline-none transition-all"
+                                    placeholder="john@company.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Industry
+                                    Sector</label>
+                                <select
+                                    class="w-full bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-brand-orange/20 focus:border-brand-orange outline-none transition-all">
+                                    <option>Municipal Infrastructure</option>
+                                    <option>Industrial Manufacturing</option>
+                                    <option>Oil &amp; Gas</option>
+                                    <option>Commercial Construction</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Subject</label>
+                                <input
+                                    class="w-full bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-brand-orange/20 focus:border-brand-orange outline-none transition-all"
+                                    placeholder="RFQ: Structural Steel Components" type="text" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Message</label>
+                            <textarea
+                                class="w-full bg-background-light dark:bg-background-dark border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-brand-orange/20 focus:border-brand-orange outline-none transition-all resize-none"
+                                placeholder="Describe your project requirements here..." rows="5"></textarea>
+                        </div>
+                        <button
+                            class="w-full md:w-auto bg-brand-burgundy hover:bg-brand-burgundy/90 text-white font-extrabold px-12 py-4 rounded-lg shadow-lg shadow-brand-burgundy/20 transition-all active:scale-95 flex items-center justify-center gap-2"
+                            type="submit">
+                            Send Message <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="lg:w-5/12 relative min-h-[400px]">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRnKKXvfaFlDRujQalxFwxC7g_Trhs1zJLk2mo5dYsMcb4RtfpQ_wN3lm6yev3Xh4qugGY9EQj_NL_fg9n11QL1boRpZMj4mwza5XrXUNCxLXZu9UvbhW5kKZl-iLD8Hb1WMhRx-5MV1NOoykb-xb-V09RrEng3_2twT03eW7Zo_w_XXkQAWFHo_voqCyXv3wBjbLvvfBdBwQyrp5qziBRkGrUj-i2l-Vrq-EPoqThGmrweWcN5xmPS4ZE5da6pexjXyciD4qyRTr2');">
+                        <div class="absolute inset-0 bg-brand-brown/60 backdrop-grayscale-[0.5]"></div>
+                        <div class="absolute bottom-12 left-12 right-12 text-white">
+                            <div class="bg-brand-orange p-1 w-12 mb-6"></div>
+                            <p class="text-2xl font-bold italic leading-tight mb-4">"Our goal at SGS is to provide
+                                engineering excellence and unmatched material reliability for every project
+                                global-wide."</p>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                                    <img alt="Headshot of Director" class="w-full h-full object-cover"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZGYoU2yvTzy-JLaYWkTerwocyNDsU-KjJrsNMq9uJAgz1kmWhbErG5AZ-YzS-VZOEZiRbVKa1-GP9pmUALeYO4ueBwMmVuMkG-2F0z_mCYlDzPA58v5GijS1RiG4foQXdfcqkSDi9dRJcEvs9XSlCBgBwqucQ3OUUF9UpQ7FIYJss49iIRgUwc0BtqHWePqEDS_-bKVrzbNxSgygj1wV6nOCV-bhzBPToKsqYseTrHeltEcANvAXpuYxEyn2wOi_QVGbIrwp7Ss4V" />
+                                </div>
+                                <div>
+                                    <p class="font-bold text-sm">Marcus Vance</p>
+                                    <p class="text-xs text-white/70">Technical Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full h-[500px] relative bg-gray-200 overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center opacity-80"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuzwKsizDAkXIt0gW4aDDpN139CE7_z_gFc69U_wIqMyikXM9X2s9mzzOHAkrDRAv5GOjxCvtmrXztnc_C0mW7wKuSLVeizz-9xOWdmlC2UAHPiL2GPb5KidVjnziqIfGKP4o4MGeUQtOqRPloMW1o1T5rvWp3mwqsYmUnWz9DDYtzxCsNFq68sc36ilvK9eOTG2MvXYpylssUiFhUeUKr4tHcfA1ayTiYEmlxoeT8URR7MzsqnbfGzHEagrXvgPzDchyvCALFysWY');">
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div
+                    class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer group">
+                    <div class="bg-brand-orange text-white p-3 rounded-xl shadow-2xl flex items-center gap-3 relative">
+                        <div class="w-8 h-8 bg-brand-brown rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white">factory</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm leading-none">Main Factory</p>
+                            <p class="text-[10px] opacity-90">SGS Industrial Zone</p>
+                        </div>
+                        <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-brand-orange rotate-45">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-1/4 right-1/4 pointer-events-auto cursor-pointer group">
+                    <div class="bg-brand-orange text-white p-3 rounded-xl shadow-2xl flex items-center gap-3 relative">
+                        <div class="w-8 h-8 bg-brand-brown rounded-lg flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white">corporate_fare</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm leading-none">Corporate HQ</p>
+                            <p class="text-[10px] opacity-90">SGS Global Tower</p>
+                        </div>
+                        <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-brand-orange rotate-45">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-8 left-8 flex flex-col gap-2">
+                <button
+                    class="w-10 h-10 bg-white rounded shadow-lg flex items-center justify-center hover:bg-gray-50"><span
+                        class="material-symbols-outlined">add</span></button>
+                <button
+                    class="w-10 h-10 bg-white rounded shadow-lg flex items-center justify-center hover:bg-gray-50"><span
+                        class="material-symbols-outlined">remove</span></button>
+            </div>
+            <div
+                class="absolute bottom-8 right-8 bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-lg flex items-center gap-4 text-xs font-bold text-brand-brown">
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-brand-orange"></span> 2
+                    Global Offices</span>
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-brand-green"></span> Live
+                    Operations</span>
+            </div>
+        </section>
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <div
+                    class="bg-brand-burgundy rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-white max-w-lg text-center md:text-left">
+                        <h2 class="text-3xl font-extrabold mb-2">Join Our Newsletter</h2>
+                        <p class="text-white/80 font-medium">Stay updated with our latest engineering innovations and
+                            industry-leading global services.</p>
+                    </div>
+                    <form class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                        <input
+                            class="w-full sm:w-80 px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-brand-orange/40 text-charcoal outline-none"
+                            placeholder="Enter your email" type="email" />
+                        <button
+                            class="bg-brand-orange text-white font-extrabold px-8 py-4 rounded-xl hover:opacity-90 transition-all shadow-xl">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-950 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-16">
+            <div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="text-brand-orange">
+                        <div class="relative w-8 h-8 flex items-center justify-center">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" stroke="#800000" stroke-width="2"></circle>
+                                <circle cx="50" cy="50" r="40" stroke="#F37021" stroke-width="2"></circle>
+                                <text dominant-baseline="middle" fill="currentColor" font-family="Arial" font-size="28"
+                                    font-weight="bold" text-anchor="middle" x="50%" y="55%">S</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="text-white text-lg font-bold tracking-tight uppercase">Steel Global Services</h2>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Setting the global standard in high-performance industrial solutions and structural steel since
+                    1984.
+                </p>
+                <div class="flex items-center gap-4">
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[18px]">hub</span></a>
+                    <a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
+                        href="#"><span class="material-symbols-outlined text-[18px]">groups</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-gray-500 text-sm">
+                    <li><a class="hover:text-brand-orange transition-colors" href="../index.html">Home</a></li>
+                    <li><a class="hover:text-brand-orange transition-colors"
+                            href="../pipe_&_fittings_catalog/code.html">Products</a></li>
+                    <li><a class="hover:text-brand-orange transition-colors"
+                            href="../corporate_about_us_page/code.html">About Us</a></li>
+                    <li><a class="hover:text-brand-orange transition-colors" href="code.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6">Sectors</h4>
+                <ul class="space-y-4 text-gray-500 text-sm">
+                    <li><a class="hover:text-brand-green transition-colors" href="#">Water Management</a></li>
+                    <li><a class="hover:text-brand-green transition-colors" href="#">Oil &amp; Infrastructure</a></li>
+                    <li><a class="hover:text-brand-green transition-colors" href="#">Civil Engineering</a></li>
+                    <li><a class="hover:text-brand-green transition-colors" href="#">Industrial Mining</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6">Compliance</h4>
+                <ul class="space-y-4 text-gray-500 text-sm">
+                    <li><a class="hover:text-brand-burgundy transition-colors" href="#">ASTM Standards</a></li>
+                    <li><a class="hover:text-brand-burgundy transition-colors" href="#">ISO 9001:2015</a></li>
+                    <li><a class="hover:text-brand-burgundy transition-colors" href="#">Quality Assurance</a></li>
+                    <li><a class="hover:text-brand-burgundy transition-colors" href="#">Legal &amp; Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-medium">
+            <p>© 2024 Steel Global Services (SGS). All rights reserved.</p>
+            <p class="mt-4 md:mt-0">Global Infrastructure Solutions Specialist</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
